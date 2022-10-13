@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    {{>navbar}}
+    <div class="container">
+        <h1>Registration Form</h1>
+        <div class="form-container">
+            <form action="/register" method="post">
+
+                <div class="input-name">
+                    <i class="fa fa-user user"></i>
+                    <input type="text" placeholder="First Name" class="name" name="firstname">
+
+                    <span>
+                        <i class="fa fa-user user"></i> 
+                        <input type="text" placeholder="Last Name" class="name" name="lastname">
+                    </span>
+                </div>
+
+                <div class="input-name">
+                    <i class="fa fa-envelope email"></i>
+                    <input type="email" placeholder="Email" class="text-name" name="email">
+                </div> 
+
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder="password" class="text-name" name="password">
+                </div> 
+
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder="Confirm password" class="text-name" name="confirmpassword">
+                </div>
+                
+                <div class="input-name">
+                    <input type="radio" class="radio-button" name="gender">
+                    <label style="margin-right: 30px;">Male</label>
+
+                    <input type="radio" class="radio-button" name="gender">
+                    <label for="gender">Female</label>
+                </div> 
+
+                <div class="input-name">
+                    <select class="country" name="country">
+                        <option>Select a country</option>
+                        <option>India</option>
+                        <option>Italy</option>
+                        <option>Nepal</option>
+                        <option>Bhutan</option>
+                        <option>Japan</option>
+                    </select>
+                    <div class="arrow">
+
+                    </div>
+                </div> 
+
+                <div class="input-name">
+                    <input type="checkbox" id="cb" class="check-button">
+                    <label for="cb" class="check">I accept the terms and conditions</label>
+                </div> 
+
+                <div class="input-name">
+                    <input type="submit" class="button" value="Register">
+                </div> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>

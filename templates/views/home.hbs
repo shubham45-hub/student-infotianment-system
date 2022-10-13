@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student information sysytem</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {{>navbar}}
+    <section id="home">
+    <h1 class="primary">Welcome to Student login portal</h1>
+    <p>Staff will be able to register themselves and search the data of the students using search page. Only
+        Univ/college admin are only allowed to update the students information. They will not have
+        privileges to delete the data.</p>
+        <a href="/register">
+          <button class="btn">Register Now</button>
+        </a>
+    </section>
+
+   <div class="container">
+    <h1>Student sign up</h1>
+
+    <form action="/register" method="post" class="forum">
+        First Name: <br><input type="text" placeholder="First Name" name="firstname"><br><br>
+        Last Name: <br><input type="text" placeholder="Last Name" name="lastname"><br><br>
+        Email:  <br><input type="email" placeholder="email" name="email"><br><br>
+        Password:<br><input type="password" placeholder="enter password" name="password"><br><br>
+        Confirm Password:<br><input type="password" placeholder="confirm password" name="confirmpassword"><br><br>
+        <button class="btn1" value="register" type="submit">Sign Up</button>
+    </form>
+   </div>
+</body>
+</html>

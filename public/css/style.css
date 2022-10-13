@@ -1,0 +1,623 @@
+/* navbar */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #5a879e;
+}
+
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 39px;
+    width: 124px;
+    margin: 3px 6px;
+}
+
+.navbar ul{
+    display: flex;
+    padding-left: 300px;
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a{
+    display: flex;
+    padding: 0px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 230px;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/bg.jpg');
+}
+section h1{
+    padding-top: 0px;
+    font-size: x-large;
+}
+#home p{
+    color: white;
+    padding: 30px 0px;
+    font-size: large;
+}
+.btn{
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border-radius: 6px;
+}
+.btn:hover{
+   background-color: black;
+   color: white;
+}
+
+/* box container */
+
+.container{
+    border: 2px solid black;
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forum{
+    padding-left: 60px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+.forum input{
+    padding: 5px 70px;
+    margin-left: 160px;
+}
+.btn1{
+    padding: 6px 20px;
+    cursor: pointer;
+}
+.btn1:hover{
+    color: white;
+    background-color: black;
+}
+
+/* login */
+body{
+    background-image: url('../img/bg1.jpg');
+    height: 40%;
+    
+}
+.card{
+    margin-top: 7%;
+    margin-left: 37%;
+    /* margin-bottom: 5%; */
+    width: 330px;
+    height: 340px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+.head{
+    padding-top: 20px;
+}
+.email input{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    border-bottom: 2px solid gray;
+}
+.password input{
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    border-bottom: 2px solid gray;  
+}
+.forgot{
+    margin-top: 20px;
+    height: 40px;
+}
+.btn{
+    width: 240px;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+.sign-up{
+    margin-top: 20px;
+    font-size: 18px;
+    color: blueviolet;
+    cursor: pointer;
+}
+  
+/* register */
+body{
+    background: url('../img/bg2.jpg');
+    background-position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 14px;
+}
+.container{
+    background: white;
+    width: 600px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 7px solid blue;
+    box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.container h1{
+    font-size: 40px;
+    line-height: 22px;
+    padding: 28px;
+    text-align: center;
+}
+
+.input-name{
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.lock{
+    padding: 8px 11px;
+}
+.name{
+    width: 45%;
+    padding: 8px 0 8px 40px;
+}
+
+.input-name span{
+    margin-left: 35px;
+}
+
+.text-name{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+}
+
+.input-name i{
+    position: absolute;
+    font-size: 18px;
+    color: blue;
+    border-right: 1px solid #cccccc;
+}
+.email{
+    padding: 8px;
+}
+.user{
+    padding: 8px;
+}
+
+.text-name, .name{
+    border: 1px solid #cccccc;
+    outline: none;
+    
+}
+.text-name:focus, .name:focus{
+    border: 1px solid blue;
+}
+.radio-button{
+    margin-right: 4px;
+}
+
+.country{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: 0px 15px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    color: #7b7b7b;
+    appearance: none;
+}
+
+.country:hover, .country:focus{
+    color: blue;
+    border-color: blue;
+    outline: none;
+}
+.arrow{
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 8px 5px 0px 5px;
+    border-style: solid;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+.countr:hover + .arrow, .country:focus + arrow{
+    border-top-color: blue;
+}
+
+.check{
+    margin-right: 15px;
+    position: relative;
+}
+.check::before{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    vertical-align: -2px;
+    border: 2px solid #cccccc;
+    padding: 2.5px;
+    background-color: transparent;
+    background-clip: content-box;
+    transition: all 0.2s ease;
+}
+.check::after{
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    content: "";
+    height: 20px;
+    left: 2px ;
+    position: absolute;
+    top: 7px;
+    transform: scaleX(-1) rotate(135deg);
+    transform-origin: left top;
+    width: 7px;
+    display: none;
+}
+
+.check-button{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.check-button:hover + .check::before{
+    border-color: blue;
+}
+.check-button:checked + .check::before{
+    border-color: green;
+}
+.check-button:checked + .check::after{
+   display: block;
+   width: 7px;
+   height: 20px;
+   border-color: green;
+}
+.button{
+    background-color: blue;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+.button:hover{
+    background-color: plum;
+}
+
+
+/* --------university----------- */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('../../public/img/bg3.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.course{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*------------------------------------------------campus--------------------------------------------*/
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col1{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col2{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+
+}
+.campus-col1 img{
+    width: 100%;
+    height: 65%;
+    display: block;
+}
+.campus-col2 img{
+    width: 100%;
+    height: 65%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 65%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*----------------facilities---------------*/
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.facility-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facility-col1{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facility-col2{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facility-col img{
+    width: 100%;
+    height: 57%;
+    border-radius: 10px;
+}
+.facility-col1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facility-col2 img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facility-col .facility-col1 .facility-col2 p{
+    padding: 0;
+}
+.facility-col .facility-col1 .facility-col2 h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*-------------testimonial----------------*/
+
+.test{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.test-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.test-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.test-col p{
+    padding: 0;
+}
+.test-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.test-col .fa{
+    color: #f44336;
+}
+
+/*=============call to action=============*/
+
+.cta{
+    margin: 30px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url('/university/img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 140px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: o;
+}
+
+/* -------------footer------------- */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+   color: #f44336;
+   margin: 0 13px;
+   cursor: pointer;
+   padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+}
